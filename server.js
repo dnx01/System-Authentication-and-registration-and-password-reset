@@ -7,7 +7,7 @@ const app = express(); // Inițializăm o aplicație Express
 
 // Conectarea la baza de date MongoDB
 mongoose
-  .connect("mongodb+srv://webmongo:webmongo@webmongo.shicolp.mongodb.net/app_users?retryWrites=true&w=majority&appName=webmongo", {
+  .connect("mongodb://localhost:27017/web_app_db", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
