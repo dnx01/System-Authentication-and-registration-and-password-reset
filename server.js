@@ -108,8 +108,8 @@ app.post("/login", async (req, res) => {
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "dnz.weed@gmail.com",
-    pass: "bani qhgj bywx wtpc",
+    user: "your_adress_mail",
+    pass: "password mail",
   },
 });
 
@@ -135,7 +135,7 @@ app.post("/forgot-password", async (req, res) => {
 
     // Trimitere e-mail de resetare a parolei
     const mailOptions = {
-      from: "dnz.weed@gmail.com",
+      from: "your mail",
       to: user.email,
       subject: "Resetare parolă",
       text: `Pentru a reseta parola, accesați acest link: http://localhost:3000/reset-password?id=${resetId}`,
